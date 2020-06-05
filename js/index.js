@@ -1,35 +1,39 @@
 // Iteration 1: Names and Input
-let hacker1 = "John";
-console.log(`The driver\'s name is ${hacker1}`);
-let hacker2 = "Thomas";
-console.log(`The navigator\'s name is ${hacker2}`);
+let name = prompt("Donner un un prenom au Pilote:");
+let name2 = prompt("Donner un un prenom au Navigateur:");
 // Iteration 2: Conditionals
-if (hacker1.length>hacher2.length){
-    console.log(hacker1.length)
-
-} else if (hacker2.length>hacher1.length) {
-    console.log (hacker2.length)
-} else if (hacker1.length===hacher2.length)
-    console.log(`Wow, you both have equally long names,${hacker1.length}`)
-} else {console.log("invalide")}
+if (name.length > name2.length) {
+  console.log(
+    `La longeur du prenom de ${name} est la plus grande, ${name.length}`
+  );
+  // code to execute if condition1 is true
+} else if (name2.length > name.length) {
+  console.log(
+    `La longeur du prenom de ${name2} est la plus grande, ${name2.length}`
+  );
+  // code to execute if condition2 is true
+} else {
+  console.log("les prenoms ont la meme longueur");
+  // code to execute if condition1  condition2 are false
+}
 
 // Iteration 3: Loops
-let capital = hacker1.toUpperCase; 
-console.log(capital); 
-console.log("J"+" "+"O"+" "+"H"+" "+"N"); 
+//3.1
+console.log(name.toUpperCase());
+console.log(name2.toUpperCase());
 
-const reversed = hacker1.reverse();
-console.log(reversed);
+//3.2
+console.log(name.reverse());
+console.log(name2.reverse());
 
-hacker1.localeCompare(hacker2);
-
-
-let nom = [hacker1,hacker2];
-nom.sort(function(hacker1, hacker2) {
-  return hacker1 - hacker2;
-});
-console.log(nom);
-// [1, 2, 3, 4, 5]
-
-
-
+//3.3
+if (name.localeCompare(name2) = -1) {
+  console.log(`Le prenom de ${name} est trié avant, ${name2}`)
+  // code to execute if condition1 is true
+} else if (name.localeCompare(name2) = 1) {
+   console.log(`Le prenom de ${name} est trié apres, ${name2})
+  code to execute if condition2 is true
+} else if {
+  console.log("les prenoms sont egaux")
+  // code to execute if condition1  condition2 are false
+} 
